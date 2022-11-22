@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real time chat app| iChat</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.3/socket.io.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="/js/client.js"></script>
+</head>
+<body>
+   <nav>
+    <img class="logo" src="logo.png" alt="image error">
+    <h1 class="head">Welcome to iChat</h1>
+   </nav>
+   <div class="container">
+      <div class="message left">Harry: hey How are you?</div>
+      <div class="message right">Rohan: ya! i am Fine. what's about you?</div>
+   </div>
+   <form onsubmit="return submitform(event)" id="send-container">
+      <input type="text" name="messageInp" placeholder="Enter Your Message" id="messageInp">
+      <button class="btn" onclick="submitform(event)" type="submit">Send</button>
+   </form>
+    
+</body>
+</html>
